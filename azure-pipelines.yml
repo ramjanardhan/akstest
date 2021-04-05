@@ -23,5 +23,5 @@ steps:
     azureSubscription: '6de3f213-99e6-4405-afe6-186755382823'
     scriptType: 'bash'
     scriptLocation: 'scriptPath'
-    scriptPath: 'aks-stop.sh''
+    scriptPath: './aks-stop.sh'
       arguments: 'Micro MC_cloud_Micro_westus2'
