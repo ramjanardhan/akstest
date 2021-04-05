@@ -1,0 +1,22 @@
+pr: none 
+trigger: none
+schedules:
+- cron: "* * * * *"
+  displayName: "After-hours (11 pm UTC)"
+  always: true
+  branches:
+    include:
+    - master
+
+variables:
+  ClusterName: micro
+  ResourceGroup: MC_cloud_Micro_westus2
+
+steps:
+  - task: AzureCLI@2
+    inputs:
+      azureSubscription: '6de3f213-99e6-4405-afe6-186755382823'
+      scriptType: 'bash'
+      scriptLocation: 'scriptPath'
+      scriptPath: './aks-stop.sh'
+      arguments: 'Micro MC_cloud_Micro_westus2'
