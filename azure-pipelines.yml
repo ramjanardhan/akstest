@@ -20,7 +20,7 @@ steps:
       scriptLocation: 'scriptPath'
       scriptPath: './- task: AzureCLI@2
   inputs:
-    azureSubscription: 'Free Trial(6de3f213-99e6-4405-afe6-186755382823)'
+    azureSubscription: '6de3f213-99e6-4405-afe6-186755382823'
     scriptType: 'bash'
     scriptLocation: 'scriptPath'
     scriptPath: 'aks-stop.sh''
